@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="shortcurt icon" href="https://cdn-icons-png.flaticon.com/128/8028/8028789.png">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+</head>
+
+<body>
+
+    <h2>Gerador de Tabuada</h2>
+
+    <div id="container">
+        <input type="number" id="numInput" placeholder="Digite um número">
+        <button onclick="geradorTabuada()">Gerar Tabuada</button>
+        <div id="tabuada"></div>
+    </div>
+ 
+    <script>
+        function geradorTabuada() {
+            var numInput = document.getElementById("numInput").value;
+            var tabuadaDiv = document.getElementById("tabuada");
+            tabuadaDiv.innerHTML = "";
+
+            if (!numInput || isNaN(numInput)) {
+                tabuadaDiv.innerHTML = "<p>Por favor, insira um número válido.</p>";
+                return;
+            }
+
+            var tableHTML = "<h3>Tabuada de " + numInput + "</h3><table border='1'><tr><th>Número</th><th>Resultado</th></tr>";
+
+            for (var i = 1; i <= 10; i++) {
+                tableHTML += "<tr><td>" + numInput + " x " + i + "</td><td>" + (numInput * i) + "</td></tr>";
+
+            }  
+
+            tableHTML += "</table";
+            tabuadaDiv.innerHTML = tableHTML;
+        }
+    </script>
+
+    <img src="https://i.pinimg.com/736x/35/c1/ec/35c1ec40ef7fa5af832e299771ea951b.jpg" alt="" width="200px">
+
+    <footer><p>Desenvolvido por Nathalia D.&copy;</p></footer>
+
+
+
+</body>
+</html>
