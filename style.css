@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: fonte1;
-    src: url(Muttia.otf);
+    src: url(Wicked\ Mouse\ Demo.otf);
 }
 
 *{
@@ -11,16 +11,17 @@
 }
 
 body{
-    margin: 10px;
+    margin: 100px;
     padding: 15px;
-    background-color: #000000;
+    background: #a284da;
+background: linear-gradient(0deg, #a284da 41%, #d272e0 100%);
     align-items: center;
     text-align: center;
 }
 
 h2{
     text-align: center;
-    color: #ffffff;
+    color: #000000;
     font-family: fonte1;
     font-size: 60px;
     margin-top: 1em;
@@ -31,8 +32,7 @@ h2{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 3em;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
 }
 
 input{
@@ -45,7 +45,7 @@ input{
 button{
     width: 100px;
     margin-top: 15px;
-    color: aliceblue;
+    color: #a284da;
     background-color: rgb(0, 0, 0);
     border-radius: 50px;
     font-family: fonte1;
@@ -53,12 +53,12 @@ button{
 
 
 tr{
-    color: aliceblue;
+    color: #a284da;
     background-color: #000000 ;
 }
 
 footer{
-    color: aliceblue;
+    color: rgb(0, 0, 0);
     text-align: center;
     margin-top: 6em;
     font-family: fonte1;
